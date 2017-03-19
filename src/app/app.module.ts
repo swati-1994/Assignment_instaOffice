@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import {LoginComponent} from '../app/login/login.component';
 import { ListComponent} from '../app/list/list.component';
 import {RouterModule}   from '@angular/router';
+import {BobaComponent} from '../app/details/boba-fett/boba-fett';
+import {SpaceshipComponent} from '../app/details/spaceship/spaceship';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent,ListComponent,LoginComponent
+    AppComponent,ListComponent,LoginComponent,SpaceshipComponent,BobaComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +24,15 @@ import {RouterModule}   from '@angular/router';
       {
         path: 'list',
         component: ListComponent,
+      },
+
+      {
+        path: 'spaceship',
+        component: SpaceshipComponent,
+      },
+      {
+        path: 'boba',
+        component: BobaComponent,
       },
 
       {
