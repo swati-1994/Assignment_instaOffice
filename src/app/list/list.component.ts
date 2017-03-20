@@ -3,20 +3,43 @@
  */
 import { Component } from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
+import {dummyDataService} from '../services/data_service';
+import {OnInit} from '@angular/core';
+
+
 
 @Component({
   selector: 'charecters-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css']
 })
-export class ListComponent {
+export class ListComponent implements OnInit{
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private DummyDataService: dummyDataService) {
   }
 
-spaceship(){
+  ngOnInit(): void {
+    this.getDummydata();
 
-  this.router.navigateByUrl('/spaceship');
+  }
+
+  Dummydata: any;
+
+  getDummydata(): void {
+
+    this.DummyDataService.getData()
+      .then(Dummydata => {
+        this.Dummydata = Dummydata;
+
+      })
+
+
+  }
+
+
+  spaceship(){
+
+  this.router.navigateByUrl('/bb-8');
 }
 
 

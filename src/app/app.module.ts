@@ -7,13 +7,14 @@ import {LoginComponent} from '../app/login/login.component';
 import { ListComponent} from '../app/list/list.component';
 import {RouterModule}   from '@angular/router';
 import {BobaComponent} from '../app/details/boba-fett/boba-fett';
-import {SpaceshipComponent} from '../app/details/spaceship/spaceship';
-
-
+import {SpaceshipComponent} from './details/bb-8/spaceship';
+import {dummyDataService} from '../app/services/data_service'
+import {stormtrooperComponent} from '../app/details/stormtrooper/stormtrooper'
+import {r2Component} from '../app/details/r2-d2/r2-d2'
 
 @NgModule({
   declarations: [
-    AppComponent,ListComponent,LoginComponent,SpaceshipComponent,BobaComponent
+    AppComponent,ListComponent,LoginComponent,SpaceshipComponent,BobaComponent,stormtrooperComponent,r2Component
   ],
   imports: [
     BrowserModule,
@@ -41,6 +42,16 @@ import {SpaceshipComponent} from '../app/details/spaceship/spaceship';
       },
 
       {
+        path: 'trooper',
+        component: stormtrooperComponent,
+      },
+
+      {
+        path: 'r2',
+        component: r2Component,
+      },
+
+      {
         path: '',
         redirectTo: '/login',
         pathMatch: 'full'
@@ -53,7 +64,7 @@ import {SpaceshipComponent} from '../app/details/spaceship/spaceship';
 
 
 
-  providers: [],
+  providers: [dummyDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

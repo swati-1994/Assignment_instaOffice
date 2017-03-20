@@ -1,14 +1,9 @@
 /**
  * Created by swati on 19/3/17.
  */
-/**
- * Created by swati on 19/3/17.
- */
-/**
- * Created by swati on 19/3/17.
- */
+
 import { Component } from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
+import { Router} from '@angular/router';
 
 
 
