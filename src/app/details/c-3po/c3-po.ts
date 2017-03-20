@@ -2,8 +2,9 @@
  * Created by swati on 20/3/17.
  */
 
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
+import {dummyDataService} from '../../services/data_service'
 
 
 
@@ -13,12 +14,25 @@ import {ActivatedRoute, Router} from '@angular/router';
   styleUrls: ['./c-3po.css'],
 
 })
-export class PoComponent {
+export class PoComponent implements OnInit{
 
-  constructor(private router: Router) {
+  constructor(private router: Router,private dummyDataService:dummyDataService ) {
+
   }
 
+  ngOnInit():void{
+    this.getDummydata();
 
+  }
+
+  Dummydata: any;
+  getDummydata(): void {
+    this.dummyDataService.getData()
+      .then(Dummydata => {
+        this.Dummydata = Dummydata;
+
+      })
+  }
 
 
 }

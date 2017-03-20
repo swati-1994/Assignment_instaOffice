@@ -24,23 +24,41 @@ export class ListComponent implements OnInit{
   }
 
   Dummydata: any;
-
   getDummydata(): void {
-
     this.DummyDataService.getData()
       .then(Dummydata => {
         this.Dummydata = Dummydata;
 
       })
-
-
   }
 
 
   spaceship(){
-
-  this.router.navigateByUrl('/bb-8');
+    this.router.navigateByUrl('/spaceship');
 }
 
+boba(){
+
+  this.router.navigateByUrl('/boba');
+
+}
+
+po(){
+
+  this.router.navigateByUrl('/po');
+}
+storm(){
+  this.router.navigateByUrl('/trooper');
+}
+
+droid(){
+
+  this.router.navigateByUrl('/darth');
+}
+
+bb(){
+  this.router.navigateByUrl('/r2');
+
+}
 
 }

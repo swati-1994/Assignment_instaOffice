@@ -10,11 +10,15 @@ import {BobaComponent} from '../app/details/boba-fett/boba-fett';
 import {SpaceshipComponent} from './details/bb-8/spaceship';
 import {dummyDataService} from '../app/services/data_service'
 import {stormtrooperComponent} from '../app/details/stormtrooper/stormtrooper'
-import {r2Component} from '../app/details/r2-d2/r2-d2'
+import {r2Component} from '../app/details/r2-d2/r2-d2';
+import {PoComponent} from '../app/details/c-3po/c3-po';
+import {darthComponent} from '../app/details/darth-vader/darth-vader'
+
 
 @NgModule({
   declarations: [
-    AppComponent,ListComponent,LoginComponent,SpaceshipComponent,BobaComponent,stormtrooperComponent,r2Component
+    AppComponent,ListComponent,LoginComponent,SpaceshipComponent,BobaComponent,stormtrooperComponent,r2Component,
+    PoComponent,darthComponent
   ],
   imports: [
     BrowserModule,
@@ -46,9 +50,19 @@ import {r2Component} from '../app/details/r2-d2/r2-d2'
         component: stormtrooperComponent,
       },
 
-      {
+     {
         path: 'r2',
         component: r2Component,
+      },
+
+      {
+        path: 'po',
+        component: PoComponent,
+      },
+
+      {
+        path: 'darth',
+        component: darthComponent,
       },
 
       {
