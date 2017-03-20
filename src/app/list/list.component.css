@@ -17,12 +17,12 @@
 }
 
 .overlay {
-  opacity: 0.5;
+  opacity: 0.7;
   position: absolute;
   bottom: 0;
   left: 100%;
   right: 0;
-  background-color: #008CBA;
+  background-color: #ff5400;
   overflow: hidden;
   width: 0;
   height: 100%;
