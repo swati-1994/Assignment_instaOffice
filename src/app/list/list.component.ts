@@ -52,12 +52,11 @@ storm(){
 }
 
 droid(){
-
-  this.router.navigateByUrl('/darth');
+  this.router.navigateByUrl('/r2');
 }
 
-bb(){
-  this.router.navigateByUrl('/r2');
+darth(){
+  this.router.navigateByUrl('/darth');
 
 }
 
