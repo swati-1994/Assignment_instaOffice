@@ -1,119 +1,19 @@
-
 <div class="main_container">
   <div class="container ">
-
-
     <h1>Unlock the force</h1>
-
     <h2> Please choose your charecter</h2>
-
-    <!--<div class="main container">-->
-      <!--<img src="../assets/images/darth-vader.png" height="100px" >-->
-    <!--</div>-->
-
-    <!--<div class="main">-->
-      <!--<img src="../assets/images/darth-vader.png" height="100px" >-->
-    <!--</div>-->
-    <!--<div class="main">-->
-      <!--<img src="../assets/images/darth-vader.png" height="100px" >-->
-    <!--</div>-->
-    <!--<div class="main">-->
-      <!--<img src="../assets/images/darth-vader.png" height="100px" >-->
-    <!--</div>-->
-    <!--<div class="main">-->
-      <!--<img src="../assets/images/darth-vader.png" height="100px" >-->
-    <!--</div>-->
-    <!--<div class="main">-->
-      <!--<img src="../assets/images/darth-vader.png" height="100px" >-->
-    <!--</div>-->
-
-
-<div class="main">
-    <div class="container_image animated wobble" (click)="spaceship()">
-      <img src="../assets/images/bb-8.png" alt="Avatar" class="image animated rollIn" height="100px">
-      <div class="overlay">
-        <div class="text">spaceship</div>
-      </div>
-      <input type="checkbox" class="checkbox" id="check1" />
-    </div>
-</div>
-
-    <!--<section>-->
-
-      <!--<div class="checkboxFour">-->
-        <!--<input type="checkbox" value="1" id="checkboxFourInput" name="" />-->
-        <!--<label for="checkboxFourInput"></label>-->
-      <!--</div>-->
-    <!--</section>-->
-
-
-
-
-
-    <div class="main">
-      <div class="container_image animated rollIn" (click)="boba()">
-        <img src="../assets/images/starwars-boba-fett.png" alt="Avatar" class="image" height="100px">
+    <div class="main" *ngFor="let list of listing">
+      <div class="container_image animated wobble" (click)="detail(list.id)">
+        <img src="{{list.image}}" alt="Avatar" class="image animated rollIn" height="100px">
         <div class="overlay">
-          <div class="text">boba-fett</div>
+          <div class="text">{{list.name}}</div>
         </div>
-        <input type="checkbox" class="checkbox" id="check2" checked="checked"/>
+        <input type="checkbox" class="checkbox" id="check1"/>
       </div>
     </div>
-
-    <div class="main">
-      <div class="container_image  animated shake" (click)="po()">
-        <img src="../assets/images/starwars-c-3po.png" alt="Avatar" class="image" height="100px">
-        <div class="overlay">
-          <div class="text">c-3-po</div>
-        </div>
-        <input type="checkbox" class="checkbox" id="check3" />
-      </div>
+    <div class="row">
+      <button class="button">View Detail</button>
     </div>
-
-    <div class="main">
-      <div class="container_image animated flash" (click)="droid()">
-        <img src="../assets/images/starwars-r2-d2.png" alt="Avatar" class="image" height="100px">
-        <div class="overlay">
-          <div class="text">r2-d2</div>
-        </div>
-        <input type="checkbox" class="checkbox" id="check4" />
-      </div>
-    </div>
-
-    <div class="main">
-      <div class="container_image animated rollIn " (click)="storm()">
-        <img src="../assets/images/starwars-stormtrooper.png" alt="Avatar" class="image" height="100px">
-        <div class="overlay">
-          <div class="text">stormtrooper</div>
-        </div>
-        <input type="checkbox" class="checkbox" id="check5" />
-      </div>
-    </div>
-
-    <div class="main">
-      <div class="container_image animated flash " (click)="darth()">
-        <img src="../assets/images/darth-vader.png" alt="Avatar" class="image" height="100px">
-        <div class="overlay">
-          <div class="text">Darth Vader</div>
-        </div>
-        <input type="checkbox" class="checkbox" id="check6" />
-      </div>
-    </div>
-<div class="row">
-  <button class="button">View Detail</button></div>
-
-    <!--<ul>-->
-      <!--<li *ngFor=" let algo of Dummydata">{{algo.image}}</li>-->
-    <!--</ul>-->
-
-    <!--<div>-->
-      <!--<label>Algorithm</label>-->
-      <!--<select class="form-control">-->
-        <!--<option *ngFor=" let algo of Dummydata">{{algo.image}}</option>-->
-      <!--</select>-->
-
-    <!--</div>-->
-
   </div>
 </div>
 

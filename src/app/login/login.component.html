@@ -1,27 +1,37 @@
-
 <div class="main_container">
   <div class="container to_center">
-
-
-
-
-
-<div >
-  <div class="img_align">
-    <img src="../assets/images/cropped_darth.png" class="image">
-  </div>
-    <div class="box " align="center">
-      <h1 align="center">
-        {{title}}
-      </h1>
-      <div >
-      <form action="/action_page.php" method="get" >
-        <input type="text" name="fname" placeholder="email" class="text_box animated fadeInLeft"><br>
-        <input type="text" name="lname" placeholder="password" class="text_box animated fadeInRight"><br>
-        <input type="submit"  value="Submit" (click)="next()" class="button animated bounceIn" size="35" >
-      </form></div>
+    <div>
+      <div class="img_align">
+        <img src="../assets/images/cropped_darth.png" class="image">
+      </div>
+      <div class="box" align="center">
+        <h1 align="center">
+          {{title}}
+        </h1>
+        <div>
+          <form action="/action_page.php" method="get">
+            <input type="text" name="fname" placeholder="email" class="text_box animated fadeInLeft" id=name name="name"
+                   [(ngModel)]="hero.name"
+                   #name="ngModel">
+            <div *ngIf="name.errors && (name.dirty || name.touched)"
+                 class="alert alert-danger">
+              <div [hidden]="!name.errors.required">
+                Name is required
+              </div>
+              <div [hidden]="!name.errors.minlength">
+                Name must be at least 4 characters long.
+              </div>
+              <div [hidden]="!name.errors.maxlength">
+                Name cannot be more than 24 characters long.
+              </div>
+            </div>
+            <br>
+            <input type="text" name="lname" placeholder="password" class="text_box animated fadeInRight"><br>
+            <input type="submit" value="Submit" (click)="next()" class="button animated bounceIn" size="35">
+          </form>
+        </div>
+      </div>
     </div>
-</div>
 
   </div>
 </div>

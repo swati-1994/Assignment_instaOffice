@@ -1,63 +1,31 @@
 /**
  * Created by swati on 19/3/17.
  */
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {dummyDataService} from '../services/data_service';
 import {OnInit} from '@angular/core';
-
-
+import {data} from '../mock_data/mock_data';
 
 @Component({
   selector: 'charecters-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css']
 })
-export class ListComponent implements OnInit{
-
+export class ListComponent implements OnInit {
   constructor(private router: Router, private DummyDataService: dummyDataService) {
+    this.listing = data;
+    console.log("data : ", JSON.stringify(this.listing));
   }
+
+  listing = {};
 
   ngOnInit(): void {
-    this.getDummydata();
-
+    this.listing = data;
+    console.log("data : ", JSON.stringify(this.listing));
   }
 
-  Dummydata: any;
-  getDummydata(): void {
-    this.DummyDataService.getData()
-      .then(Dummydata => {
-        this.Dummydata = Dummydata;
-
-      })
+  detail(id) {
+    console.log("Id: ", id);
   }
-
-
-  spaceship(){
-    this.router.navigateByUrl('/spaceship');
-}
-
-boba(){
-
-  this.router.navigateByUrl('/boba');
-
-}
-
-po(){
-
-  this.router.navigateByUrl('/po');
-}
-storm(){
-  this.router.navigateByUrl('/trooper');
-}
-
-droid(){
-  this.router.navigateByUrl('/r2');
-}
-
-darth(){
-  this.router.navigateByUrl('/darth');
-
-}
-
 }
