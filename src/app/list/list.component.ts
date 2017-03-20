@@ -20,12 +20,20 @@ export class ListComponent implements OnInit {
 
   listing = {};
 
+  id=null;
+
   ngOnInit(): void {
     this.listing = data;
     console.log("data : ", JSON.stringify(this.listing));
   }
 
   detail(id) {
+    this.id=id;
     console.log("Id: ", id);
+  }
+
+
+  next(){
+    this.router.navigate(['detail/'+this.id])
   }
 }

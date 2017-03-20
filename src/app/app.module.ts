@@ -13,11 +13,11 @@ import {stormtrooperComponent} from '../app/details/stormtrooper/stormtrooper'
 import {r2Component} from '../app/details/r2-d2/r2-d2';
 import {PoComponent} from '../app/details/c-3po/c3-po';
 import {darthComponent} from '../app/details/darth-vader/darth-vader'
-
+import {DetailComponent} from '../app/details/detail'
 
 @NgModule({
   declarations: [
-    AppComponent,ListComponent,LoginComponent,SpaceshipComponent,BobaComponent,stormtrooperComponent,r2Component,
+    AppComponent,ListComponent,LoginComponent,SpaceshipComponent,BobaComponent,stormtrooperComponent,r2Component,DetailComponent,
     PoComponent,darthComponent
   ],
   imports: [
@@ -30,6 +30,13 @@ import {darthComponent} from '../app/details/darth-vader/darth-vader'
         path: 'list',
         component: ListComponent,
       },
+
+      {
+        path: 'detail/:id',
+        component: DetailComponent,
+      },
+
+
 
       {
         path: 'spaceship',

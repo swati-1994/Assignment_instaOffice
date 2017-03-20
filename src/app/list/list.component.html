@@ -4,15 +4,16 @@
     <h2> Please choose your charecter</h2>
     <div class="main" *ngFor="let list of listing">
       <div class="container_image animated wobble" (click)="detail(list.id)">
-        <img src="{{list.image}}" alt="Avatar" class="image animated rollIn" height="100px">
+        <img src="{{list.image}}" alt="Avatar" class="image animated {{list.animation}}" height="100px">
         <div class="overlay">
-          <div class="text">{{list.name}}</div>
+          <div class="text">{{list.name}} </div>
+
         </div>
-        <input type="checkbox" class="checkbox" id="check1"/>
+        <input type="checkbox" class="checkbox" id="{{list.id}}"/>
       </div>
     </div>
     <div class="row">
-      <button class="button">View Detail</button>
+      <button class="button" [disabled]="!id" (click)="next()" >View Detail {{id}}</button>
     </div>
   </div>
 </div>
