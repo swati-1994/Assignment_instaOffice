@@ -13,14 +13,14 @@ import {ActivatedRoute, Router} from '@angular/router';
 export class LoginComponent {
   constructor(private router: Router) {
   }
-
   user = {
     id: null,
     password: null
   };
   title = 'Unlock the force';
-
   next() {
-    this.router.navigateByUrl('/list');
+    if ((this.user.id === 'yoda') && (this.user.password === 'dogbah')) {
+      this.router.navigateByUrl('/list');
+    }
   };
 }

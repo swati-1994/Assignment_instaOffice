@@ -1,5 +1,5 @@
 <div class="main_container">
-  <div class="container to_center">
+  <div class="container" align="center">
     <div>
       <div class="img_align">
         <img src="../assets/images/cropped_darth.png" class="image">
@@ -9,31 +9,32 @@
           {{title}}
         </h1>
         <div>
-          <form action="/action_page.php" method="get">
+          <form>
             <input type="text" name="username" placeholder="Username" class="text_box animated fadeInLeft"
-                   [(ngModel)]="user.id" #name="ngModel" required minlength="5" maxlength="20">
+                   [(ngModel)]="user.id" #name="ngModel" required minlength="4" maxlength="20" >
             <br>
-            <input type="text" name="password" placeholder="Password" class="text_box animated fadeInRight"
-                   [(ngModel)]="user.password" #password="ngModel" required minlength="5" maxlength="20">
+            <input type="password" name="password" placeholder="Password" class="text_box animated fadeInRight"
+                   [(ngModel)]="user.password" #password="ngModel"  required minlength="5" maxlength="20">
             <div *ngIf="name.errors && (name.dirty || name.touched)">
-              <div [hidden]="!name.errors.minlength" class="alert alert-danger">
-                Name must be at least 5 characters long.
+              <div [hidden]="!name.errors.minlength" class="alert">
+                Name must be at least 4 characters long.
               </div>
-              <div [hidden]="!name.errors.maxlength" class="alert alert-danger">
+              <div [hidden]="!name.errors.maxlength" class="alert">
                 Name cannot be more than 24 characters long.
               </div>
             </div>
             <div *ngIf="password.errors && (password.dirty || password.touched)"
                  class="alert alert-danger">
-              <div [hidden]="!password.errors.minlength" class="alert alert-danger">
+              <div [hidden]="!password.errors.minlength" class="alert">
                 Password must be atleast 5 characters long.
               </div>
-              <div [hidden]="!password.errors.maxlength" class="alert alert-danger">
+              <div [hidden]="!password.errors.maxlength" class="alert">
                 Name cannot be more than 24 characters long.
               </div>
             </div>
             <br>
-            <input type="submit" value="Submit" (click)="next()" class="button animated bounceIn" size="35">
+            <input type="submit" [disabled]="password.errors || name.errors" value="Submit" (click)="next()"
+                   class="button animated bounceIn" size="35">
           </form>
         </div>
       </div>
