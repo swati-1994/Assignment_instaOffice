@@ -22,15 +22,23 @@ export class DetailComponent implements OnInit {
 
   detail: {}
   id = null;
-
+image:String;
   ngOnInit(): void {
     this.id = this.route.snapshot.params['id'];
-    this.detail = data;
 
-    for (let i=0; i<=data.length;i++) {
 
-      console.log("data",data[i]);
+    for (let i=0; i<data.length;i++) {
 
+      console.log("data",data[i].id);
+      console.log("image",data[i].image);
+if(data[i].id==this.id)
+{
+  this.detail=data[i];
+  this.image=data[i].image;
+
+  console.log("if_data",this.detail);
+
+}
 
     }
 

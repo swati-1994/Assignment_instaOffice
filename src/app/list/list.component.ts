@@ -3,7 +3,6 @@
  */
 import {Component} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
-import {dummyDataService} from '../services/data_service';
 import {OnInit} from '@angular/core';
 import {data} from '../mock_data/mock_data';
 
@@ -13,7 +12,7 @@ import {data} from '../mock_data/mock_data';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
-  constructor(private router: Router, private DummyDataService: dummyDataService) {
+  constructor(private router: Router) {
     this.listing = data;
     console.log("data : ", JSON.stringify(this.listing));
   }
