@@ -14,7 +14,10 @@ export class LoginComponent {
   constructor(private router: Router) {
   }
 
-  hero = {};
+  user = {
+    id: null,
+    password: null
+  };
   title = 'Unlock the force';
 
   next() {
