@@ -55,7 +55,6 @@ export const data = [
     "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi accusantium ab sunt, laborum eum quos " +
     "laudantium nulla voluptatibus sed, tempora voluptate veritatis molestias odit possimus quibusdam assumenda, " +
     "asperiores magnam harum?",
-    
     "animation":"wobble"
   }
 ];

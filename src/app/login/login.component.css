@@ -1,6 +1,6 @@
 .box{
   width: 30%;
-  background-color: lightgrey;
+  background-color: white;
   border: 2px solid #ef3709;
 }
 .box h1{
@@ -39,4 +39,15 @@
 .alert{
   color: red;
 
+}
+
+.cont{
+
+  background-color: lightgrey;
+}
+
+ement.style {
+}
+html {
+  display: inline-block;
 }
