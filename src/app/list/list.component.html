@@ -1,0 +1,24 @@
+<div class="main_container">
+  <div class="container ">
+    <h1>Unlock the force</h1>
+    <h2> Please choose your charecter</h2>
+    <div class="main" *ngFor="let list of listing">
+      <div class="container_image animated wobble" (click)="detail(list.id)">
+        <img src="{{list.image}}" alt="Avatar" class="image animated {{list.animation}}" height="100px">
+        <div class="overlay">
+          <div class="text">{{list.name}} </div>
+        </div>
+        <input type="checkbox" class="checkbox" id="{{list.id}}"/>
+      </div>
+    </div>
+    <div class="row">
+      <button class="button" [disabled]="!id" (click)="next()" >View Detail </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
