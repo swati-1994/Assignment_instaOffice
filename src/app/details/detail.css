@@ -1,12 +1,12 @@
 .image {
-  width: 40%;
   float: left;
-  padding: 10px;
   height: 300px;
 }
 .content{
+  border: 2px solid #A9A9A9;
   width: 40%;
   float: left;
   padding: 10px;
   height: 300px;
+  box-shadow: 10px 10px 5px #888888;
 }

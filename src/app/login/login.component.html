@@ -8,13 +8,14 @@
         {{title}}
       </h1>
       <div>
-        <form>
+        <form autocomplete="off">
           <input type="text" name="username" placeholder="Username" class="text_box animated fadeInLeft"
-                 [ngClass]="valid_username?'valid':'invalid'"
-                 [(ngModel)]="user.id" #name="ngModel" required minlength="4" maxlength="20">
+                 [ngClass]="valid_username?(valid_username === true?'valid':'invalid'):(valid_username === false?'invalid':'')"
+                 [(ngModel)]="user.id" #name="ngModel" required minlength="4" maxlength="20"
+                 autocomplete="off">
           <br>
           <input type="password" name="password" placeholder="Password" class="text_box animated fadeInRight"
-                 [ngClass]="invalid_password?'invalid':''"
+                 [ngClass]="invalid_password?'invalid':''" autocomplete="off"
                  [(ngModel)]="user.password" #password="ngModel" required minlength="5" maxlength="20">
           <div *ngIf="name.errors && (name.dirty || name.touched)">
             <div [hidden]="!name.errors.minlength" class="alert">
@@ -32,6 +33,9 @@
             <div [hidden]="!password.errors.maxlength" class="alert">
               Name cannot be more than 24 characters long.
             </div>
+          </div>
+          <div [hidden]="!error_message" class="alert">
+            {{error_message}}
           </div>
           <br>
           <input type="submit" [disabled]="password.errors || name.errors" value="Submit" (click)="next()"

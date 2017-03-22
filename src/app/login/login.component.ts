@@ -13,6 +13,7 @@ export class LoginComponent {
 
   valid_username = null;
   invalid_password = null;
+  error_message = null;
   user = {
     id: null,
     password: null
@@ -26,10 +27,12 @@ export class LoginComponent {
         this.router.navigateByUrl('/list');
       }
       else {
+        this.error_message = "The password you have entered does not match the username!"
         this.invalid_password = true;
       }
     }
     else {
+      this.error_message = "Invalid Username"
       this.valid_username = false;
     }
   };
