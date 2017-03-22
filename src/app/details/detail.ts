@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router'
+import {ActivatedRoute, Router} from '@angular/router'
 import {data} from '../mock_data/mock_data'
 @Component({
   selector: 'app-detail',
@@ -7,7 +7,7 @@ import {data} from '../mock_data/mock_data'
   styleUrls: ['./detail.css']
 })
 export class DetailComponent implements OnInit {
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private router: Router) {
   }
 
   detail: {}
@@ -23,4 +23,9 @@ export class DetailComponent implements OnInit {
       }
     }
   }
+
+  goBack() {
+    this.router.navigate(['list']);
+  }
+
 }
