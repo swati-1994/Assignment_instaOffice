@@ -1,7 +1,7 @@
 export const data = [
   {
     "id": 1,
-    "name": "bb-8",
+    "name": "BB-8",
     "image": "../../assets/images/bb-8.png",
     "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi accusantium ab sunt, laborum eum quos " +
     "laudantium nulla voluptatibus sed, tempora voluptate veritatis molestias odit possimus quibusdam assumenda, " +
@@ -10,7 +10,7 @@ export const data = [
   },
   {
     "id": 2,
-    "name": "darth-vader",
+    "name": "Darth-Vader",
     "image": "../../assets/images/darth-vader.png",
     "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi accusantium ab sunt, laborum eum quos" +
     " laudantium nulla voluptatibus sed, tempora voluptate veritatis molestias odit possimus quibusdam assumenda, " +
@@ -19,7 +19,7 @@ export const data = [
   },
   {
     "id": 3,
-    "name": "boba-fett",
+    "name": "Boba-Fett",
     "image": "../../assets/images/starwars-boba-fett.png",
     "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi accusantium ab sunt, laborum eum quos " +
     "laudantium nulla voluptatibus sed, tempora voluptate veritatis molestias odit possimus quibusdam assumenda, " +
@@ -28,7 +28,7 @@ export const data = [
   },
   {
     "id": 4,
-    "name": "c-3po",
+    "name": "C-3Po",
     "image": "../../assets/images/starwars-c-3po.png",
     "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi accusantium ab sunt, laborum eum quos" +
     " laudantium nulla voluptatibus sed, tempora voluptate veritatis molestias odit possimus quibusdam assumenda, " +
@@ -37,7 +37,7 @@ export const data = [
   },
   {
     "id": 5,
-    "name": "r2-d2",
+    "name": "R2-D2",
     "image": "../../assets/images/starwars-r2-d2.png",
     "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi accusantium ab sunt, laborum eum quos" +
     " laudantium nulla voluptatibus sed, tempora voluptate veritatis molestias odit possimus quibusdam assumenda, " +
@@ -46,7 +46,7 @@ export const data = [
   },
   {
     "id": 6,
-    "name": "stormtrooper",
+    "name": "Stormtrooper",
     "image": "../../assets/images/starwars-stormtrooper.png",
     "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi accusantium ab sunt, laborum eum quos " +
     "laudantium nulla voluptatibus sed, tempora voluptate veritatis molestias odit possimus quibusdam assumenda, " +
