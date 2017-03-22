@@ -1,13 +1,14 @@
-.box{
+.box {
   width: 30%;
   background-color: lightgrey;
   border: 2px solid #ef3709;
 }
-.box h1{
+
+.box h1 {
   padding-top: 40px;
 }
 
-.img_align{
+.img_align {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -15,9 +16,9 @@
 }
 
 .text_box {
-  height:40px;
+  height: 40px;
   width: 300px;
-  font-size:14pt;
+  font-size: 14pt;
   margin-bottom: 10px;
 }
 
@@ -36,7 +37,19 @@
   border-radius: 4px;
 }
 
-.alert{
+.alert {
   color: red;
+}
 
+.valid {
+  background-image: url(../../assets/images/correct.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.invalid {
+  background-image: url(../../assets/images/invalid.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

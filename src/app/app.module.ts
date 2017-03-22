@@ -17,36 +17,26 @@ import {DetailComponent} from '../app/details/detail'
     FormsModule,
     HttpModule,
     RouterModule.forRoot([
-
       {
         path: 'list',
         component: ListComponent,
       },
-
       {
         path: 'detail/:id',
         component: DetailComponent,
       },
-
       {
         path: 'login',
         component: LoginComponent,
       },
-
-
       {
         path: '',
         redirectTo: '/login',
         pathMatch: 'full'
       }
-
     ]),
-
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-
-
-}
+export class AppModule {}
