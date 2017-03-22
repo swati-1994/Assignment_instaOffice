@@ -1,6 +1,6 @@
 .box {
   width: 30%;
-  background-color: lightgrey;
+  background-color: white;
   border: 2px solid #ef3709;
 }
 
@@ -52,4 +52,15 @@
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.cont{
+
+  background-color: lightgrey;
+}
+
+ement.style {
+}
+html {
+  display: inline-block;
 }
