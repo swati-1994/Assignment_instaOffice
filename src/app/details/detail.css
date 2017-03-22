@@ -17,6 +17,9 @@ hr {
   height: 5px;
   color: #F6CE00;
   background-color: #F6CE00;
+  width:5%;
+  margin-left:0;
+  text-align:left;
 }
 
 .go-back {
