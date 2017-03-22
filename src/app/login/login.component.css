@@ -47,6 +47,7 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 .invalid {
   background-image: url(../../assets/images/invalid.png);
   background-position: right;
@@ -54,13 +55,10 @@
   background-size: contain;
 }
 
-.cont{
-
+.cont {
   background-color: lightgrey;
 }
 
-ement.style {
-}
 html {
   display: inline-block;
 }

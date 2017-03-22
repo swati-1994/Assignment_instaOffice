@@ -1,6 +1,3 @@
-/**
- * Created by swati on 19/3/17.
- */
 import {Component} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {OnInit} from '@angular/core';
@@ -14,25 +11,20 @@ import {data} from '../mock_data/mock_data';
 export class ListComponent implements OnInit {
   constructor(private router: Router) {
     this.listing = data;
-    console.log("data : ", JSON.stringify(this.listing));
   }
 
   listing = {};
-
-  id=null;
+  id = null;
 
   ngOnInit(): void {
-    this.listing = data;
-    console.log("data : ", JSON.stringify(this.listing));
   }
 
   detail(id) {
-    this.id=id;
-    console.log("Id: ", id);
+    this.id = id;
   }
 
-
-  next(){
-    this.router.navigate(['detail/'+this.id])
+  next() {
+    console.log("id", this.id);
+    this.router.navigate(['detail/' + this.id])
   }
 }

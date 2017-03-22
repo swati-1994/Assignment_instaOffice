@@ -1,6 +1,3 @@
-/**
- * Created by swati on 19/3/17.
- */
 import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 
@@ -33,7 +30,6 @@ export class LoginComponent {
       }
     }
     else {
-      console.log("Invalid");
       this.valid_username = false;
     }
   };

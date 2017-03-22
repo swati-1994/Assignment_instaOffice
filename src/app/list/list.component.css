@@ -4,10 +4,8 @@
   padding: 15px;
 }
 
-
 .container_image {
   position: relative;
-  width: 50%;
 }
 
 .image {
@@ -36,63 +34,13 @@
   border-radius: 4px;
 }
 
-/*.text {*/
-  /*white-space: nowrap;*/
-  /*color: white;*/
-  /*font-size: 20px;*/
-  /*position: absolute;*/
-  /*overflow: hidden;*/
-  /*top: 50%;*/
-  /*left: 50%;*/
-  /*transform: translate(-50%, -50%);*/
-  /*-ms-transform: translate(-50%, -50%);*/
-/*}*/
-
-
-/*checkboxes*/
-
-/*.checkboxFour {*/
-  /*width: 20px;*/
-  /*height: 20px;*/
-  /*background: #ddd;*/
-  /*margin: 20px 90px;*/
-
-  /*border-radius: 100%;*/
-  /*position: relative;*/
-  /*box-shadow: 0px 1px 3px rgba(0,0,0,0.5);*/
-/*}*/
-
-/*.checkboxFour label {*/
-  /*display: block;*/
-  /*width: 15px;*/
-  /*height: 15px;*/
-  /*border-radius: 100px;*/
-
-  /*transition: all .5s ease;*/
-  /*cursor: pointer;*/
-  /*position: absolute;*/
-  /*top: 5px;*/
-  /*left: 5px;*/
-  /*z-index: 1;*/
-
-  /*background: #333;*/
-  /*box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);*/
-/*}*/
-
-/*.checkboxFour input[type=checkbox]:checked + label {*/
-  /*background: #26ca28;*/
-/*}*/
-
-.radio { position: absolute; bottom: 0px; right: 0px; color: #ef3709; background-color: #ef3709 }
-
 /*button*/
 .button {
   width: 25%;
   float: left;
   padding: 15px;
-
 }
-.color{
 
-  color:  #A9A9A9;
+.color {
+  color: #A9A9A9;
 }

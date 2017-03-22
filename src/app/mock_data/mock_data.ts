@@ -1,7 +1,3 @@
-/**
- * Created by swati on 19/3/17.
- */
-
 export const data = [
   {
     "id": 1,
